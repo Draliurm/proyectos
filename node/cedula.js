@@ -30,12 +30,13 @@ function Verificar(){
     console.log("modulo",modulo)
     ultimoDigito=10-modulo
     if (arrCedula[arrCedula.length-1]==ultimoDigito){
-        alert("Cedula valida")
+        document.getElementById("mensaje").innerHTML=("Cedula valida")
     }else{
-        alert("Ingrese una cedula valida")
+        document.getElementById("mensaje").innerHTML=("Ingrese una cedula valida")
     }
 
     console.log("acunulador", acumulador)
     console.log(arrResultados)
     document.getElementById("mostrar").innerHTML=cedula
+
 }
