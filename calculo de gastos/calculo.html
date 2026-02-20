@@ -11,16 +11,28 @@
     <div align="center">
         <p class="titulo"> Dinero total </p>
     </div>
+
     <div align="center">
     <br> <p class="texto">Ingrese su dinero: </p> <input class="input" type="number" name="" id="dinero" value="">
     </div>
-    <br><br> <p class="texto">Producto:</p>  <input class="input" type="text" name="" id="productos">   
-    <br><br> <p class="texto">Precio:</p> <input class="input" type="number" name="" id="precio" value="">
-    <div align="center"> <br><br><br> <button class="boton" onclick="agregar()"> Agregar registros </button> </div>
+    <br><br><div class="linuea">
+    <p class="texto">Producto:</p>  
+    <p class="texto">Precio:</p>
+    <p class="texto">Cantidad:</p>
+    </div>
+    <div class="linea">
+    <input class="input" type="text" name="" id="productos">  
+    <input class="input" type="number" name="" id="precio" value="">
+    <input class="input" type="number" name="" id="cantidad"> 
+    <div align="center"> <button class="boton" onclick="agregar()"> Agregar registros </button> </div>
+    </div>
     <br> <center> <h1 id="ver"> </h1> </center>
     <div align="center"> <br><br><br> <button class="boton" onclick="calculo()"> Calculo </button> </div>
-    <br><br><br> <p class="texto">Gasto total:</p> <p class="texto" id="gasto"> 0 </p>
-    <br> <p class="texto">Total restante:</p> <p class="texto" id="resto"> 0 </p>
+    <center><br><br> <div class="resultados">
+    <div class="Fin">
+    <p class="texto">Gasto total:</p> <p class="texto" id="gasto"> 0 </p>
+    <p class="texto">Total restante:</p> <p class="texto" id="resto"> 0 </p>
+    </div>
     <script src="calculo.js"></script>
 </div>
 </body>
